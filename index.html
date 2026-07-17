@@ -265,7 +265,7 @@
 <header>
   <h1>Tracker Bancos Centrales</h1>
   <div class="asof">
-    <span>Datos al: <b>6 de julio de 2026</b></span>
+    <span>Datos al: <b>13 de julio de 2026</b></span>
   </div>
   <div class="legend">
     <span><span class="dot" style="background:var(--mfo-naranja)"></span> Sesgo restrictivo / subiendo</span>
@@ -280,7 +280,7 @@
 
 <footer>
   <p>
-    Fuentes: Revisión Semanal de Mercados MFO (6 jul 2026) — tablas de Tasa de Política Monetaria, Inflación, Manufactura, Servicios y Déficit Fiscal del Escenario Macro, más Datos Económicos semanales; comunicados oficiales de la Fed, BCE, Banco de Inglaterra, Banco de Japón, Banco Popular de China, Banco de Canadá, RBA, Banco Central de Chile, Banco Central de Brasil (Copom) y Banxico. Corte al 6 de julio de 2026. PMI Manufacturero y de Servicios corresponden a Markit PMI (ISM para EE.UU.). Donde no hay una cifra oficial reciente y confiable se indica "-" en vez de estimarla. Este panel es informativo y no constituye asesoría de inversión.
+    Fuentes: Revisión Semanal de Mercados MFO (13 jul 2026) — tablas de Tasa de Política Monetaria, Inflación, Manufactura, Servicios y Déficit Fiscal del Escenario Macro, más Datos Económicos semanales; comunicados oficiales de la Fed, BCE, Banco de Inglaterra, Banco de Japón, Banco Popular de China, Banco de Canadá, RBA, Banco Central de Chile, Banco Central de Brasil (Copom) y Banxico. Corte al 13 de julio de 2026. PMI Manufacturero y de Servicios corresponden a Markit PMI (ISM para EE.UU.). Donde no hay una cifra oficial reciente y confiable se indica "-" en vez de estimarla. Este panel es informativo y no constituye asesoría de inversión.
   </p>
 </footer>
 
@@ -295,7 +295,7 @@ const banks = [
     gdp:'2,1–2,3%', gdpSub:'proyección 2026', pmiMfg:'53,3', pmiSvc:'54,0', fiscalDeficit:'-6,3%', fiscalMedian:'-4,7%', fiscalTag:'deterioro', fiscalTagClass:'bad',
     caption:'Sin cambios desde marzo · 4ª pausa consecutiva',
     next:'29–30 jul 2026',
-    note:'Cuarta pausa consecutiva bajo el nuevo presidente Kevin Warsh. La creación de empleo de junio decepcionó fuerte (57k vs. 113k esperados), lo que añade presión a un FOMC que ya anticipa un debate interno relevante en julio.'
+    note:'Las minutas de la última reunión reflejan una creciente preocupación por la inflación: la trayectoria de la tasa dependerá de los datos, dado el repunte del petróleo tras la reanudación del conflicto en el estrecho de Ormuz. Bajo Warsh, la Fed formó cinco grupos de trabajo para revisar métodos y herramientas de política monetaria. Esta semana (13–19 jul) hablan Bowman, Waller, Barr, Cook y Logan, además del testimonio de Warsh ante el Congreso.'
   },
   {
     id:'ecb', region:'europa', code:'BCE', bank:'Banco Central Europeo', country:'Zona Euro',
@@ -334,12 +334,12 @@ const banks = [
     id:'pboc', region:'asia', code:'PBOC', bank:'Banco Popular de China', country:'China',
     rateShort:'3,00%', rateTag:'LPR a 1 año',
     status:'hold', statusLabel:'Mantiene',
-    inflation:'-', inflationSub:'sin meta explícita de inflación', target:'"Moderadamente laxa"',
+    inflation:'1,0%', inflationSub:'CPI interanual, jun-26 (reportado, vs. 1,1% esp.); sin meta explícita', target:'"Moderadamente laxa"',
     unemployment:'-', unemploymentSub:'no reportado de forma comparable',
     gdp:'5,0%', gdpSub:'T1-2026 · meta oficial 4,5–5,0%', pmiMfg:'51,7', pmiSvc:'50,2', fiscalDeficit:'-5,5%', fiscalMedian:'-2,8%', fiscalTag:'deterioro', fiscalTagClass:'bad',
-    caption:'PMI Manufacturero jun-26: 50,3 (reportado, vs. 50,1 esp.)',
-    next:'Revisión mensual, día 20',
-    note:'El PBoC mantiene tasas en mínimos históricos. El PMI Compuesto de junio (RatingDog) se ubicó en 53,6, sosteniendo el pulso de la actividad pese al conflicto en Medio Oriente.'
+    caption:'PPI jun-26: 4,1% (reportado, en línea con lo esperado)',
+    next:'PBoC Rate Decision: 19 jul 2026',
+    note:'El PBoC mantiene tasas en mínimos históricos. El CPI de junio subió a 1,0% interanual (levemente bajo el 1,1% esperado) y el PPI se ubicó en 4,1%, presionado al alza por el shock energético de Medio Oriente. Las reservas internacionales alcanzaron US$3.416 billones.'
   },
   {
     id:'boc', region:'americas', code:'BOC', bank:'Banco de Canadá', country:'Canadá',
@@ -367,23 +367,23 @@ const banks = [
     id:'bcch', region:'americas', code:'BCCH', bank:'Banco Central de Chile', country:'Chile',
     rateShort:'4,50%', rateTag:'TPM',
     status:'hold', statusLabel:'Mantiene',
-    inflation:'3,9%', inflationSub:'IPC interanual, may-26', target:'3,0% (±1pp)',
+    inflation:'4,3%', inflationSub:'IPC interanual, jun-26 (reportado, sube desde 3,9% en may-26)', target:'3,0% (±1pp)',
     unemployment:'9,4%', unemploymentSub:'may-26 (reportado, sube desde 9,1%)',
     gdp:'-0,9%', gdpSub:'IMACEC YoY may-26 · 5º retroceso mensual consecutivo', pmiMfg:'-', pmiSvc:'-', fiscalDeficit:'-2,2%', fiscalMedian:'-2,0%', fiscalTag:'similar', fiscalTagClass:'neutral',
-    caption:'Sin cambios desde inicios de 2026',
+    caption:'IPC jun-26: 0,0% m/m (vs -0,2% esperado)',
     next:'Evaluación reunión a reunión',
-    note:'El IMACEC de mayo cayó -0,9% anual, su quinto retroceso consecutivo, explicado principalmente por menor producción minera. El desempleo subió a 9,4% y la producción industrial cayó -7,5%. El Consejo mantiene la TPM cerca de su nivel neutral pese a este deterioro, atento a los riesgos internacionales antes de evaluar recortes.'
+    note:'El IPC de junio subió 0,0% m/m (por sobre el -0,2% esperado por el mercado) y 4,3% en doce meses, un salto relevante desde el 3,9% de mayo. El IMACEC de mayo había caído -0,9% anual, su quinto retroceso consecutivo, y el desempleo subió a 9,4%. El Consejo mantiene la TPM cerca de su nivel neutral pese a este repunte inflacionario, atento a los riesgos internacionales antes de evaluar recortes.'
   },
   {
     id:'bcb', region:'americas', code:'BCB', bank:'Banco Central de Brasil', country:'Brasil',
     rateShort:'14,25%', rateTag:'Selic',
     status:'cut', statusLabel:'Bajando',
-    inflation:'4,1–4,9%', inflationSub:'expectativas IPCA 2026', target:'3,0% (±1,5pp)',
+    inflation:'4,6%', inflationSub:'IPCA interanual, jun-26 (reportado, vs. 4,8% esp.; baja desde 4,7%)', target:'3,0% (±1,5pp)',
     unemployment:'-', unemploymentSub:'no reportado esta semana',
     gdp:'0,2%', gdpSub:'Producción Industrial YoY may-26 (reportado, vs. 2,7% anterior)', pmiMfg:'50,8', pmiSvc:'51,3', fiscalDeficit:'-8,6%', fiscalMedian:'-4,5%', fiscalTag:'deterioro', fiscalTagClass:'bad',
-    caption:'Deuda Neta/PIB may-26: 67,9% (sube desde 67,4%)',
+    caption:'IPCA jun-26: 4,6% a/a (reportado, bajo lo esperado)',
     next:'Copom: calibración gradual',
-    note:'El Copom recorta con cautela pese a la guerra en Medio Oriente. La producción industrial de mayo se desaceleró fuerte (0,2% vs. 2,7% el mes anterior) y la deuda neta sobre PIB continúa al alza.'
+    note:'El Copom recorta con cautela pese a la guerra en Medio Oriente. El IPCA de junio se ubicó en 4,6% interanual (vs. 4,8% esperado), levemente por debajo del 4,7% de mayo. La producción industrial de mayo se desaceleró fuerte (0,2% vs. 2,7% el mes anterior) y la deuda neta sobre PIB continúa al alza.'
   },
   {
     id:'banxico', region:'americas', code:'BANX', bank:'Banco de México', country:'México',
